@@ -1,4 +1,4 @@
-module amimati
+module github.com/otama-jaccy/amimati
 
 go 1.21.0
 
