@@ -21,10 +21,6 @@ func (t *tags) String() string {
 }
 
 func (t *tags) Set(value string) error {
-	if len(*t) > 0 {
-		return fmt.Errorf("tags flag already set")
-	}
-
 	for _, tt := range strings.Split(value, ",") {
 		var key, val string
 		v := strings.Split(tt, ":")
